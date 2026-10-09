@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analice Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="#inicio" class="logo">Analice <span>&lt;/&gt;</span></a>
+
+        <nav class="menu" id="menu">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#formacao">Formação</a>
+            <a href="#certificacoes">Certificações</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <div class="acoes">
+            <button class="botao-tema" id="botaoTema" type="button" aria-label="Ativar modo claro">
+                <span class="icone-tema">☼</span>
+                <span class="bolinha"></span>
+                <span class="icone-tema">☾</span>
+            </button>
+            <button class="botao-menu" id="botaoMenu" type="button">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="secao inicio">
+            <div class="texto-inicio aparecer">
+                <span class="subtitulo">OLÁ, EU SOU A</span>
+                <h1>Analice<span>!</span></h1>
+                <h2>Estudante de Desenvolvimento de Sistemas</h2>
+                <p>
+                    Estou aprendendo programação e desenvolvimento web e 
+                    criando meus primeiros projetos durante o curso.
+                </p>
+
+                <div class="botoes-inicio">
+                    <a href="#projetos" class="botao principal">Ver projetos</a>
+                    <a href="curriculo.pdf" class="botao alternativo" download>Meu currículo ↓</a>
+                </div>
+            </div>
+
+            <div class="foto-area aparecer">
+                <div class="foto">
+                    <img src="foto-portfolio.png" alt="Foto de Analice">
+                </div>
+                <div class="icone-codigo">&lt;/&gt;</div>
+            </div>
+        </section>
+
+        <section id="sobre" class="secao">
+            <div class="titulo-secao aparecer">
+                <h2>Sobre Mim</h2>
+            </div>
+
+            <div class="sobre-conteudo">
+                <div class="sobre-texto aparecer">
+                    <p>
+                        Sou estudante de Desenvolvimento de Sistemas e estou construindo
+                        minha trajetória na área de tecnologia.
+                    </p>
+                    <p>
+                        Tenho interesse principalmente em programação e desenvolvimento
+                        web, buscando sempre aprender novas ferramentas e melhorar minhas
+                        habilidades.
+                    </p>
+                </div>
+
+                <div class="qualidades aparecer">
+                    <div class="qualidade">
+                        <span>01</span>
+                        <h3>Foco</h3>
+                        <p>Dedicação para aprender e evoluir constantemente.</p>
+                    </div>
+
+                    <div class="qualidade">
+                        <span>02</span>
+                        <h3>Criatividade</h3>
+                        <p>Gosto de transformar ideias em projetos.</p>
+                    </div>
+
+                    <div class="qualidade">
+                        <span>03</span>
+                        <h3>Comprometimento</h3>
+                        <p>Responsabilidade para realizar minhas atividades.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="secao">
+            <div class="titulo-secao aparecer">
+                <h2>Habilidades</h2>
+            </div>
+
+            <div class="lista-habilidades">
+                <div class="habilidade aparecer">
+                    <span>01</span>
+                    <h3>HTML</h3>
+                    <p>Estruturação de páginas web.</p>
+                </div>
+
+                <div class="habilidade aparecer">
+                    <span>02</span>
+                    <h3>CSS</h3>
+                    <p>Estilização, layouts e responsividade.</p>
+                </div>
+
+                <div class="habilidade aparecer">
+                    <span>03</span>
+                    <h3>JavaScript</h3>
+                    <p>Interações e funcionalidades para páginas.</p>
+                </div>
+
+                <div class="habilidade aparecer">
+                    <span>04</span>
+                    <h3>C#</h3>
+                    <p>Conhecimentos básicos de programação.</p>
+                </div>
+
+                <div class="habilidade aparecer">
+                    <span>05</span>
+                    <h3>Figma</h3>
+                    <p>Criação de protótipos e interfaces.</p>
+                </div>
+
+                <div class="habilidade aparecer">
+                    <span>06</span>
+                    <h3>Windows</h3>
+                    <p>Operação, instalação e configuração.</p>
+                </div>
+
+                <div class="habilidade aparecer">
+                    <span>07</span>
+                    <h3>Pacote Office</h3>
+                    <p>Word, Excel e PowerPoint.</p>
+                </div>
+
+                <div class="habilidade aparecer">
+                    <span>08</span>
+                    <h3>Google Workspace</h3>
+                    <p>Utilização de ferramentas Google.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="secao">
+            <div class="titulo-secao aparecer">
+                <h2>Projetos</h2>
+            </div>
+
+            <div class="lista-projetos">
+                <article class="projeto aparecer">
+                    <div class="numero-projeto">01</div>
+                    <span>DESENVOLVIMENTO WEB</span>
+                    <h3>Portfólio Pessoal</h3>
+                    <p>
+                        Projeto desenvolvido em HTML, CSS e JavaScript com design
+                        responsivo baseado no protótipo criado no Figma.
+                    </p>
+                    <button class="botao-projeto" onclick="abrirProjeto('portfolio')">
+                        Ver projeto
+                    </button>
+                </article>
+
+                <article class="projeto aparecer">
+                    <div class="numero-projeto">02</div>
+                    <span>HTML + CSS</span>
+                    <h3>Site Analice Nails</h3>
+                    <p>
+                        Projeto de desenvolvimento de uma página utilizando
+                        estrutura HTML e estilização CSS.
+                    </p>
+                    <a
+                        href="https://12502090-arch.github.io/DisplayGrid/"
+                        target="_blank"
+                        class="botao-projeto"
+                    >
+                        Ver projeto
+                    </a>
+                </article>
+
+                <article class="projeto aparecer">
+                    <div class="numero-projeto">03</div>
+                    <span>EM DESENVOLVIMENTO</span>
+                    <h3>Próximo projeto</h3>
+                    <p>
+                        Espaço reservado para um dos próximos projetos que vou 
+                        desenvolver durante o curso.
+                    </p>
+                   <button class="botao-projeto" onclick="abrirProjeto('breve')">
+                        Ver projeto
+                   </button>
+                </article>
+            </div>
+        </section>
+
+        <section id="formacao" class="secao">
+            <div class="titulo-secao aparecer">
+                <h2>Formação e Aprendizado</h2>
+            </div>
+
+            <div class="linha-tempo">
+                <div class="item-formacao aparecer">
+                    <span class="ano">2024</span>
+                    <div>
+                        <h3>Ensino Fundamental II</h3>
+                        <p>Colégio Santa Maria</p>
+                    </div>
+                </div>
+
+                <div class="item-formacao aparecer">
+                    <span class="ano">2025</span>
+                    <div>
+                        <h3>Técnico em Informática</h3>
+                        <p>COTEMIG — 1ª série</p>
+                    </div>
+                </div>
+
+                <div class="item-formacao aparecer">
+                    <span class="ano">2026</span>
+                    <div>
+                        <h3>Técnico em Informática</h3>
+                        <p>COTEMIG — 2ª série, em andamento</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificacoes" class="secao">
+            <div class="titulo-secao aparecer">
+                <h2>Certificações</h2>
+            </div>
+
+            <div class="lista-certificados">
+                <article class="certificado aparecer">
+                    <div class="logo-cisco">CISCO</div>
+                    <span class="ano-certificado">2026</span>
+                    <div class="icone-certificado">◆</div>
+                    <h3>Introdução à Cibersegurança</h3>
+                    <p>Cisco Networking Academy — COTEMIG</p>
+                    <small>Concluído em 29/03/2026</small>
+                    <a href="certificado-cisco-ciberseguranca.pdf" target="_blank" class="botao-certificado">
+                        Ver certificado ↗
+                    </a>
+                </article>
+
+                <article class="certificado aparecer">
+                    <div class="logo-cisco">CISCO</div>
+                    <span class="ano-certificado">2026</span>
+                    <div class="icone-certificado">◆</div>
+                    <h3>HTML Essentials</h3>
+                    <p>Cisco Networking Academy — COTEMIG</p>
+                    <small>Concluído em 27/08/2026</small>
+                    <a href="certificado-cisco-html.pdf" target="_blank" class="botao-certificado">
+                        Ver certificado ↗
+                    </a>
+                </article>
+
+                <article class="certificado aparecer">
+                    <div class="logo-cisco">CISCO</div>
+                    <span class="ano-certificado">2026</span>
+                    <div class="icone-certificado">◆</div>
+                    <h3>CSS Essentials</h3>
+                    <p>Cisco Networking Academy — COTEMIG</p>
+                    <small>Concluído em 28/08/2026</small>
+                    <a href="certificado-cisco-css.pdf" target="_blank" class="botao-certificado">
+                        Ver certificado ↗
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato" class="secao">
+            <div class="titulo-secao aparecer">
+                <h2>Entre em Contato</h2>
+            </div>
+
+            <div class="contato-conteudo">
+                <div class="contato-info aparecer">
+                    <h3>Vamos conversar?</h3>
+                    <p>
+                        Se quiser conhecer mais sobre meus projetos ou entrar em
+                        contato comigo, envie uma mensagem.
+                    </p>
+
+                    <a href="https://github.com/12502090-arch" target="_blank" rel="noopener noreferrer" class="botao-github">
+                        GitHub ↗
+                    </a>
+                </div>
+
+                <form id="formularioContato" class="formulario aparecer">
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" placeholder="(31) 99999-9999" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" placeholder="Escreva aqui sua mensagem" required></textarea>
+                    </div>
+
+                    <button type="submit" class="botao principal">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>© 2026 Analice. Todos os direitos reservados.</p>
+        <a href="https://github.com/12502090-arch" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </footer>
+
+    <div class="janela" id="janelaProjeto">
+        <div class="janela-conteudo">
+            <button class="fechar" id="fecharJanela">×</button>
+            <span id="janelaTipo"></span>
+            <h2 id="janelaTitulo"></h2>
+            <p id="janelaTexto"></p>
+        </div>
+    </div>
+
+    <div class="aviso" id="aviso">Mensagem enviada com sucesso!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
